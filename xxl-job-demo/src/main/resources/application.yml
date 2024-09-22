@@ -11,6 +11,10 @@ xxl:
     accessToken: default_token # 执行器通讯token
     admin:
       addresses: http://127.0.0.1:8080/xxl-job-admin  # 调度中心部署地址
+  login:
+    username: admin
+    password: 123456
+    ifRemember: on
 
 
 

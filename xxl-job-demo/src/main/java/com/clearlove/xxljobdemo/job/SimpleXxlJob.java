@@ -51,4 +51,10 @@ public class SimpleXxlJob {
     System.out.println("任务结束时间：" + new Date());
     System.out.println("任务耗时：" + (System.currentTimeMillis() - startTime) + " 毫秒");
   }
+  
+  @XxlJob("codeMissionHandler")
+  public void codeMissionHandler() {
+    String jobParam = XxlJobHelper.getJobParam();
+    System.out.println(jobParam);
+  }
 }
